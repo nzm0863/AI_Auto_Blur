@@ -1,12 +1,18 @@
+AI Auto Blur is a Windows desktop application that automatically detects faces and illustration private parts and applies blur processing using AI.
+![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)
+![Python](https://img.shields.io/badge/Python-3.11-green)
+![Release](https://img.shields.io/badge/Release-v0.9.0-orange)
 # AI Auto Blur
 
-**Latest Release:** v0.8.2
+**Latest Release:** v0.9.0
 
 YOLO11 Segmentation と YuNet を利用して、画像内の指定オブジェクトを自動検出し、ぼかし処理を行う Windows 向け GUI ツールです。
 ![sample](sample.png)
 ![gui](gui.png)
 
 ## youtube
+
+Demo video (Shorts)
 
 https://www.youtube.com/shorts/hnytZAQRL1k
 
@@ -34,6 +40,12 @@ https://www.youtube.com/shorts/hnytZAQRL1k
 * NumPy
 * Pillow
 * PyInstaller
+
+## Requirements
+
+- Windows 10 / Windows 11
+- Python 3.11 (development)
+- NVIDIA GPU is optional.
 
 ## 使い方
 
@@ -74,13 +86,12 @@ YOLO の検出信頼度の閾値を設定します。
 * JPEG
 * WebP
 
-## 学習済みモデルについて
+## Trained Model
 
-本アプリでは独自に学習した YOLO11 Segmentation モデルを使用しています。
+AI Auto Blur uses a custom-trained YOLO11 Segmentation model.
 
-配布版には動作に必要な学習済みモデルが含まれています。
-
-学習済みモデルファイルは GitHub リポジトリには含まれていません。
+- The GitHub repository does not include the trained model.
+- The Windows release package includes the required model files for execution.
 
 ## 開発環境から実行する場合
 
@@ -92,7 +103,7 @@ python gui.py
 ## EXE のビルド
 
 ```bash
-pyinstaller --clean --noconfirm --onedir --windowed \
+py -m PyInstaller --clean --noconfirm --onedir --windowed \
   --name "AI Auto Blur" \
   --add-data "models/best.pt;models" \
   --add-data "models/face_detection_yunet_2026may.onnx;models" \
@@ -102,6 +113,14 @@ pyinstaller --clean --noconfirm --onedir --windowed \
 生成されたアプリは `dist/AI Auto Blur/` に出力されます。
 
 ## Changelog
+
+## v0.9.0
+
+### Added
+
+* Ultralytics のライセンス運用に関する説明を README に追加。
+* 商用配布時のライセンス方針を明記（Enterprise License 対応予定）。
+
 
 ## v0.8.2
 
@@ -131,6 +150,10 @@ pyinstaller --clean --noconfirm --onedir --windowed \
 
 ## License
 
-本ソフトウェアのライセンスは、使用している外部ライブラリおよび学習済みモデルのライセンス条件に従います。
+AI Auto Blur uses the Ultralytics YOLO framework and a custom-trained segmentation model.
 
-商用配布・販売についてはライセンス条件を確認した上で対応します。
+This application is distributed free of charge for personal use and evaluation.
+
+If AI Auto Blur is developed into a commercial product or commercially distributed in the future, the appropriate Ultralytics commercial license will be obtained before commercial deployment.
+
+The custom-trained model included with this application was created by the developer.

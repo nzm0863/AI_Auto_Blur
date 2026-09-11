@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.9.0
+
+### Added
+
+* Ultralytics のライセンス運用に関する説明を README に追加。
+* 商用配布時のライセンス方針を明記（Enterprise License 対応予定）。
+
+---
+
 ## v0.8.2
 
 ### Fixed
