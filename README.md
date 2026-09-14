@@ -155,6 +155,14 @@ py -m PyInstaller --clean --noconfirm --onedir --windowed --collect-all ultralyt
 * 顔・陰部の同時ぼかしに対応。
 * GUI レイアウトを改善。
 
+## Windows SmartScreen について
+
+初回起動時に Windows Defender SmartScreen が警告を表示する場合があります。
+
+これはデジタル署名のない新しいアプリであるため表示されるものです。
+
+「詳細情報」→「実行」を選択すると起動できます。
+
 ## License
 
 AI Auto Blur uses the Ultralytics YOLO framework and a custom-trained segmentation model.
