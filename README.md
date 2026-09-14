@@ -14,6 +14,7 @@ AI Auto Blur v0.9.0 is the first public release of the CPU Edition.
 
 YOLO11 Segmentation と YuNet を利用して、画像内の指定オブジェクトを自動検出し、ぼかし処理を行う Windows 向け GUI ツールです。
 ![sample](sample.png)
+![private_parts](private_parts.png)
 ![gui](gui.png)
 
 ## youtube
