@@ -4,7 +4,9 @@ AI Auto Blur is a Windows desktop application that automatically detects faces a
 ![Release](https://img.shields.io/badge/Release-v0.9.0-orange)
 # AI Auto Blur
 
-**Latest Release:** v0.9.0
+**Latest Release:** v0.9.0(CPU Edition)
+
+AI Auto Blur v0.9.0 is the first public release of the CPU Edition.
 
 YOLO11 Segmentation と YuNet を利用して、画像内の指定オブジェクトを自動検出し、ぼかし処理を行う Windows 向け GUI ツールです。
 ![sample](sample.png)
@@ -45,7 +47,7 @@ https://www.youtube.com/shorts/hnytZAQRL1k
 
 - Windows 10 / Windows 11
 - Python 3.11 (development)
-- NVIDIA GPU is optional.
+- NVIDIA GPU is **not required** for the CPU Edition.
 
 ## 使い方
 
@@ -90,7 +92,7 @@ YOLO の検出信頼度の閾値を設定します。
 
 AI Auto Blur uses a custom-trained YOLO11 Segmentation model.
 
-- The GitHub repository does not include the trained model.
+- The GitHub repository does not include the trained model files.
 - The Windows release package includes the required model files for execution.
 
 ## 開発環境から実行する場合
@@ -161,4 +163,4 @@ This application is distributed free of charge for personal use and evaluation.
 
 If AI Auto Blur is developed into a commercial product or commercially distributed in the future, the appropriate Ultralytics commercial license will be obtained before commercial deployment.
 
-The custom-trained model included with this application was created by the developer.
+The custom-trained segmentation model included with this application was created by the developer.
