@@ -6,6 +6,8 @@ binaries = []
 hiddenimports = []
 tmp_ret = collect_all('ultralytics')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+tmp_ret = collect_all('customtkinter')
+datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 
 
 a = Analysis(
@@ -28,7 +30,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='AI Auto Blur',
+    name='AI Auto Blur CUDA Test',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -47,5 +49,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='AI Auto Blur',
+    name='AI Auto Blur CUDA Test',
 )

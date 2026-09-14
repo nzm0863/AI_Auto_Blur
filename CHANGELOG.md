@@ -4,8 +4,15 @@
 
 ### Added
 
-* Ultralytics のライセンス運用に関する説明を README に追加。
-* 商用配布時のライセンス方針を明記（Enterprise License 対応予定）。
+- CPU Edition として初回公開。
+- Ultralytics のライセンス運用に関する説明を README に追加。
+- 商用配布時のライセンス方針を明記（Enterprise License 対応予定）。
+
+### Notes
+
+- Windows 10 / Windows 11 対応。
+- CPU Edition のため NVIDIA GPU は不要です。
+- GPU Edition は現在開発中です。
 
 ---
 

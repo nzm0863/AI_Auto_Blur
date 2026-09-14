@@ -9,6 +9,8 @@ MODEL_PATH = resource_path("models/best.pt")
 model = YOLO(str(MODEL_PATH))
 
 def detect(image,confidence):
+    print("MODEL_PATH:", MODEL_PATH)
+    print("exists:", Path(MODEL_PATH).exists())
     # AIで検出
     results = model(image, conf=confidence)
     result = results[0]
