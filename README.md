@@ -4,6 +4,10 @@ AI Auto Blur is a Windows desktop application that automatically detects faces a
 ![Release](https://img.shields.io/badge/Release-v0.9.0-orange)
 # AI Auto Blur
 
+## Download
+
+➡️ **[Download the latest Windows release here](../../releases/latest)**
+
 **Latest Release:** v0.9.0(CPU Edition)
 
 AI Auto Blur v0.9.0 is the first public release of the CPU Edition.
